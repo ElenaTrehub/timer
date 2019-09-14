@@ -1,0 +1,14 @@
+<div class="timer">
+  <div class="timer__watch">
+    <input name="hour" [(ngModel)]="hour">
+    <input  name="minute" [(ngModel)]="minute">
+    <input  name="second" [(ngModel)]="second">
+
+  </div>
+  <div class="timer__buttons">
+    <button (click)="Start()">Start</button>
+    <button (click)="Stop()">Stop</button>
+    <button #await (click)="Wait()">Wait</button>
+    <button (click)="Reset()">Reset</button>
+  </div>
+</div>
